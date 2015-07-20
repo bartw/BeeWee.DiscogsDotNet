@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A90F150C-7720-43D1-961C-870C1E35EB07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BeeWee.DiscogsDotNet</RootNamespace>
+    <AssemblyName>BeeWee.DiscogsDotNet</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10069.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10069.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UAP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\IAuthenticator.cs" />
+    <Compile Include="Authentication\OAuthAuthenticator.cs" />
+    <Compile Include="Clients\ApiClient.cs" />
+    <Compile Include="Clients\AuthenticationClient.cs" />
+    <Compile Include="Clients\DatabaseClient.cs" />
+    <Compile Include="Clients\IAuthenticationClient.cs" />
+    <Compile Include="Clients\IDatabaseClient.cs" />
+    <Compile Include="Clients\IImagesClient.cs" />
+    <Compile Include="Clients\ImagesClient.cs" />
+    <Compile Include="Clients\IMarketplaceClient.cs" />
+    <Compile Include="Clients\IUserCollectionClient.cs" />
+    <Compile Include="Clients\IUserIdentityClient.cs" />
+    <Compile Include="Clients\IUserWantlistClient.cs" />
+    <Compile Include="Clients\MarketplaceClient.cs" />
+    <Compile Include="Clients\UserCollectionClient.cs" />
+    <Compile Include="Clients\UserIdentityClient.cs" />
+    <Compile Include="Clients\UserWantlistClient.cs" />
+    <Compile Include="DiscogsClient.cs" />
+    <Compile Include="Helpers\SearchHelper.cs" />
+    <Compile Include="Helpers\UrlHelper.cs" />
+    <Compile Include="Http\ApiConnection.cs" />
+    <Compile Include="Http\IApiConnection.cs" />
+    <Compile Include="IDiscogsClient.cs" />
+    <Compile Include="Models\Request\InventoryQuery.cs" />
+    <Compile Include="Models\Request\OrdersQuery.cs" />
+    <Compile Include="Models\Request\SearchQuery.cs" />
+    <Compile Include="Models\Response\Actor.cs" />
+    <Compile Include="Models\Response\Alias.cs" />
+    <Compile Include="Models\Response\Artist.cs" />
+    <Compile Include="Models\Response\ArtistReleases.cs" />
+    <Compile Include="Models\Response\Buyer.cs" />
+    <Compile Include="Models\Response\CollectionFields.cs" />
+    <Compile Include="Models\Response\CollectionRelease.cs" />
+    <Compile Include="Models\Response\CollectionResults.cs" />
+    <Compile Include="Models\Response\Community.cs" />
+    <Compile Include="Models\Response\Company.cs" />
+    <Compile Include="Models\Response\Contributer.cs" />
+    <Compile Include="Models\Response\Contribution.cs" />
+    <Compile Include="Models\Response\ContributionResults.cs" />
+    <Compile Include="Models\Response\DiscogsResource.cs" />
+    <Compile Include="Models\Response\Fee.cs" />
+    <Compile Include="Models\Response\Field.cs" />
+    <Compile Include="Models\Response\FieldResults.cs" />
+    <Compile Include="Models\Response\Folder.cs" />
+    <Compile Include="Models\Response\FolderResults.cs" />
+    <Compile Include="Models\Response\Format.cs" />
+    <Compile Include="Models\Response\From.cs" />
+    <Compile Include="Models\Response\Identifier.cs" />
+    <Compile Include="Models\Response\Identity.cs" />
+    <Compile Include="Models\Response\Image.cs" />
+    <Compile Include="Models\Response\Inventory.cs" />
+    <Compile Include="Models\Response\InventorySortEnumeration.cs" />
+    <Compile Include="Models\Response\Item.cs" />
+    <Compile Include="Models\Response\Label.cs" />
+    <Compile Include="Models\Response\LabelReleases.cs" />
+    <Compile Include="Models\Response\Listing.cs" />
+    <Compile Include="Models\Response\MasterRelease.cs" />
+    <Compile Include="Models\Response\MasterReleaseVersions.cs" />
+    <Compile Include="Models\Response\Message.cs" />
+    <Compile Include="Models\Response\Order.cs" />
+    <Compile Include="Models\Response\OrderMessageResult.cs" />
+    <Compile Include="Models\Response\OrderResults.cs" />
+    <Compile Include="Models\Response\OrderSortEnumeration.cs" />
+    <Compile Include="Models\Response\OrderStatusEnumeration.cs" />
+    <Compile Include="Models\Response\Pagination.cs" />
+    <Compile Include="Models\Response\Price.cs" />
+    <Compile Include="Models\Response\Profile.cs" />
+    <Compile Include="Models\Response\Rating.cs" />
+    <Compile Include="Models\Response\Refund.cs" />
+    <Compile Include="Models\Response\Release.cs" />
+    <Compile Include="Models\Response\Result.cs" />
+    <Compile Include="Models\Response\SearchItemType.cs" />
+    <Compile Include="Models\Response\SearchResults.cs" />
+    <Compile Include="Models\Response\Seller.cs" />
+    <Compile Include="Models\Response\Shipping.cs" />
+    <Compile Include="Models\Response\SortOrderEnumeration.cs" />
+    <Compile Include="Models\Response\SubmissionResults.cs" />
+    <Compile Include="Models\Response\Submissions.cs" />
+    <Compile Include="Models\Response\Submitter.cs" />
+    <Compile Include="Models\Response\Token.cs" />
+    <Compile Include="Models\Response\Total.cs" />
+    <Compile Include="Models\Response\Tracklist.cs" />
+    <Compile Include="Models\Response\Urls.cs" />
+    <Compile Include="Models\Response\Version.cs" />
+    <Compile Include="Models\Response\Video.cs" />
+    <Compile Include="Models\Response\Want.cs" />
+    <Compile Include="Models\Response\WantlistResults.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Throttling\IThrottler.cs" />
+    <Compile Include="Throttling\Throttler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.0.0\lib\win8\System.Numerics.Vectors.WindowsRuntime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
