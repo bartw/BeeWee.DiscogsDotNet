@@ -11,6 +11,6 @@ namespace BeeWee.DiscogsDotNet.Clients
     {
         Task<Token> GetRequestTokenAsync();
         string GetAuthorizeUrl(string tokenKey);
-        Task<Token> GetAccessTokenAsync()
+        Task<Token> GetAccessTokenAsync();
     }
 }
