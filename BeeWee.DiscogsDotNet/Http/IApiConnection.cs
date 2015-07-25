@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeeWee.DiscogsDotNet.Authentication;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace BeeWee.DiscogsDotNet.Http
 {
     public interface IApiConnection : IDisposable
     {
+        IAuthenticator Authenticator { get; set; }
         Task<string> Get(Uri uri);
         Task<T> Get<T>(Uri uri);
         Task<string> Post(Uri uri, object data);

@@ -16,10 +16,12 @@ namespace BeeWee.DiscogsDotNet.Throttling
         {
             _pool = new SemaphoreSlim(concurrentRequests);
             _resetSpan = resetSpan;
-            _releaseTimes = new Queue<DateTime>();
+            _releaseTimes = new Queue<DateTime>(concurrentRequests);
             _queueLock = new object();
-
-            _releaseTimes.Enqueue(DateTime.MinValue);
+            for (int i = 0; i < concurrentRequests; i++)
+            {
+                _releaseTimes.Enqueue(DateTime.MinValue);
+            }
         }
 
         public async Task WaitAsync()

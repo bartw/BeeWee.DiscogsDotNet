@@ -85,7 +85,7 @@ namespace BeeWee.DiscogsDotNet.Http
 
         private HttpRequestMessage CreateRequest(HttpMethod method, Uri uri)
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, uri);
+            var request = new HttpRequestMessage(method, uri);
             request.Headers.UserAgent.Clear();
             request.Headers.UserAgent.Add(new ProductInfoHeaderValue(_productInformation));
             if (Authenticator != null)

@@ -13,7 +13,7 @@ namespace BeeWee.DiscogsDotNet.Clients
 
         protected ApiClient(IApiConnection apiConnection)
         {
-
+            ApiConnection = apiConnection;
         }
     }
 }
